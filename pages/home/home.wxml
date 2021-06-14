@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml
+<view >
+
+  <image src='/static/img/tab/poster.jpg'   style="width: 750rpx; height: 1182rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></image>
+  <image src='cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/结婚照压缩/179.jpg' ></image>
+</view>
+
+
+<image src='cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/结婚照压缩/179.jpg' class='inv' style="width: 249rpx; height: 345rpx; display: block; box-sizing: border-box; left: 251rpx; top: 25%; position: fixed"></image>
+-->
+
+<view >
+ 
+ <image src='/static/img/tab/poster.jpg' class='cover' mode='aspectFill'></image>
+ 
+</view>

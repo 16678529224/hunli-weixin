@@ -1,0 +1,88 @@
+page{
+  /* height: 100%;#F6F6F6 */
+  background:#04b2f7bd
+}
+/* @font-face {
+  font-family: "blod";
+  src: url('https://static.heytea.com/taro_trial/v1/font/WenYue-XinQingNianTi-NC-W8_1.otf');
+} */
+
+view{
+  font-family: 'ds-digital';
+  font-size: 55rpx;
+}
+
+.login-test { /* 按钮美化 */
+	width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+/* 背景颜色 	background: #FFFFCC; */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: #3f4749; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+
+
+
+.place-input{
+  color: #00c3ff;
+}
+
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+	width:100%;
+}
+.hengjuzhong{
+	display: flex;
+	flex-direction: row;
+	align-items:center
+}
+.dibulan{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 150px;
+	/* background: #F6F6F6; */
+}
+.dibulan input{
+	background: #ffffff;
+	/* margin: 0 8%; */
+	margin-left: 10rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 5px;
+}
+.beijingimage1 {
+  
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+	z-index: -999;
+	height:100%;
+}
+.beijingimage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+	z-index: -999;
+	height:100%;
+}
+
+
+
+
+

@@ -1,0 +1,169 @@
+<view wx:if="{{music_url}}">
+   <view wx:if="{{isPlayingMusic}}">
+    <view class="background_music" bindtap="play">
+      <image src="/static/img/tab/music_icon.png" class="musicImg music_icon" />
+      <image src="/static/img/tab/music_play.png" class="music_play pauseImg" />
+    </view>
+  </view>
+  <view wx:else>
+    <view class="background_music" bindtap="play">
+      <image src="/static/img/tab/music_icon.png" class="musicImg" />
+      <image src="/static/img/tab/music_play.png" class="music_play playImg music_stop" />
+    </view>
+  </view> 
+</view>
+
+
+<!-- <view  class="container bright789_view_hide{{d1yc == true?'bright789_view_show':''}}">
+  <view animation="{{animation}}" class="view">我在做动画</view> style="width:100%;height:100%;transform: scale(3);
+</view> -->
+
+<!-- 第一幕 -->
+<view     class="bright789_view_hide{{d1yc == true?'bright789_view_show':''}} zongMu  ">
+  <image  animation="{{animationData}}"   mode='widthFix' style="width:100%;transform: scale(3);" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/首107-1.png"  ></image>
+   <view  class="tupian1view flexjuzhong" >
+    <image    style="height:600rpx;" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/小人双1.gif"  ></image>  
+  </view> 
+
+</view>
+
+<!-- 第二幕 -->
+<view  class="zongMu bright789_view_hide{{d2yc == true?'bright789_view_show':''}}">
+ <view  class="tupian2view flexjuzhong" >
+  <image   mode='widthFix'  src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/小人双二.gif"  ></image> 
+ </view> 
+ <text class="wemziHI2" >hi ~</text> 
+ <text class="wemzihuanying2" animation="{{animationData0}}">Are You Ready?</text> 
+ <text class="wemzihuanyinghan2" animation="{{animationData1}}">准备好了吗 ？</text>  
+</view>
+
+<!-- 第三幕 -->
+<view  class="zongMu bright789_view_hide{{d3yc == true?'bright789_view_show':''}}">
+ <image  animation="{{animationData3}}"   mode='widthFix' style="width:100%;transform: scale(4);" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/结婚照压缩/103.jpg"  ></image>
+</view>
+
+<!-- 第四幕 -->
+<view  class="zongMu bright789_view_hide{{d4yc == true?'bright789_view_show':''}}">
+  <view style="height: 30%;"></view>
+  <view style="height: 40%;" > 
+    <text animation="{{animationData4}}" class="wemziHI4 flexjuzhong" >6月25日</text>
+  </view>
+  <view style="height: 30%;"></view>
+</view>
+
+<!-- 第五幕 -->
+<view  class="zongMu bright789_view_hide{{d5yc == true?'bright789_view_show':''}}">
+  <image  animation="{{animationData5v1}}"   style="position: absolute;width:100%;height:100%;z-index:1" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/动态心背景.gif"  ></image>
+  <image   animation="{{animationData5v2}}"  mode='widthFix' class="mu5tu2" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/新郎结婚.jpg"  >
+  </image>
+  <image  animation="{{animationData5v3}}" mode='widthFix'    class="mu5tu3" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/白底波浪.png"  >
+  </image>
+  <image   animation="{{animationData5v4}}"    class="mu5tu4" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/小人男独.gif"  >
+  </image>
+  <image  animation="{{animationData5v5}}" mode='widthFix'    class="mu5tu5" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/新郎字.png"  >
+  </image>  
+</view>
+
+<!-- 第六幕 -->
+<view  class="zongMu bright789_view_hide{{d6yc == true?'bright789_view_show':''}}">
+  <image  animation="{{animationData6v1}}"   style="position: absolute;width:100%;height:100%;z-index:1" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/动态心背景.gif"  ></image>
+  <image   animation="{{animationData6v2}}"   mode='widthFix' class="mu5tu2" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/新娘结婚.jpg"  >
+  </image>
+  <image  animation="{{animationData6v3}}" mode='widthFix'    class="mu5tu3" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/白底波浪.png"  >
+  </image>
+  <image   animation="{{animationData6v4}}"    class="mu6tu4" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/小人女独.gif"  >
+  </image>
+  <image  animation="{{animationData6v5}}" mode='widthFix'    class="mu5tu5" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/新娘字.png"  >
+  </image>  
+</view>
+
+<!-- 第七幕 -->
+<view  class="zongMu bright789_view_hide{{d7yc == true?'bright789_view_show':''}}">
+  <view style="position: absolute;height: 100%;width:100%;z-index:1">
+    <view style="height: 30%;z-index:1"></view>
+    <view style="height: 40%;z-index:1" > 
+      <text animation="{{animationData7}}" class="wemziHI4 flexjuzhong" >我们结婚了</text>
+    </view>
+    <view style="height: 30%;z-index:1"></view>
+  </view>
+   <image  animation="{{animationData7v2}}"  style="position: absolute;width:100%;height:100%;z-index:3;top:800px" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/立方背景图.gif"  ></image> 
+</view>
+
+
+<!-- 第八幕 -->
+<view  class="zongMu bright789_view_hide{{d8yc == true?'bright789_view_show':''}}">
+  <image   style="position: absolute;width:100%;height:100%;z-index:1" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/立方背景图.gif"  ></image>
+  <view animation="{{animationData8}}" class='zongMu lifangzongMu' style="z-index:2;top:800px">
+    <!-- 魔方 -->
+    <view class='lifangMu1' >
+      <swipertd id="mofang" >
+        <swipertd-item side='front' >
+          <image     style="width:100%;height：100%" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/魔方-069.jpg"  ></image>
+        </swipertd-item>
+        <swipertd-item side='right' my-class='item coral'>
+          <image     style="width:100%;height：100%" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/魔方-013.jpg"  ></image>
+        </swipertd-item>
+        <swipertd-item side='back' my-class='item yellow'>
+          <image     style="width:100%;height：100%" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/魔方-061.jpg"  ></image>
+        </swipertd-item>
+        <swipertd-item side='left' my-class='item cyan'>
+          <image     style="width:100%;height：100%" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/魔方-104.jpg"  ></image>
+        </swipertd-item>
+        <swipertd-item side='top' my-class='item red'>
+          <image     style="width:100%;height：100%" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/魔方-124.jpg"  ></image>
+        </swipertd-item>
+        <swipertd-item side='bottom' my-class='item gray'>
+          <image     style="width:100%;height：100%" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/魔方-207.jpg"  ></image>
+        </swipertd-item>
+      </swipertd>
+    </view>
+
+    <view class='lifangMu2'>
+      <view class='lifangMu2v1'>
+        <image   mode='widthFix'   style="width:80%;" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/立方中图.png"  ></image>
+      </view>
+      <view class='lifangMu2v2'>
+        <view class='lifangMu2v2v1'>
+          <image   mode='widthFix'   style="width:95%;" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/结婚照压缩/067.jpg"  ></image>
+        </view>
+        <view class='lifangMu2v2v1'>
+          <image   mode='widthFix'   style="width:95%;" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/结婚照压缩/124.jpg"  ></image>         
+        </view>
+        <view class='lifangMu2v2v1'>
+          <image   mode='widthFix'   style="width:95%;" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/结婚照压缩/205.jpg"  ></image>          
+        </view>
+      </view>
+
+    </view>
+
+    <view class='lifangMu3'>
+      <view class='lifangMu3v1'>
+        <image   mode='widthFix'   style="width:100%;" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/小人立方.gif"  ></image>
+      </view>
+      <view class='lifangMu3v2'>
+        <view class='lifangMu3v2v1'>
+          <image   mode='widthFix'   style="width:100%;height:100%" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/立方下1图.png"  ></image>
+        </view>
+        <view class='lifangMu3v2v2'>
+          <image   mode='widthFix'   style="width:70%;" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/立方下2图.png"  ></image>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+</view>
+
+
+<!-- 第结尾幕 -->
+<view  class="zongMu bright789_view_hide{{dycend == true?'bright789_view_show':''}}">
+ <image  animation="{{animationDataend}}"   mode='widthFix' style="width:100%;transform: scale(0.1);" src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/结尾.gif"  >
+  
+ </image>
+ <view class="chongbo" bindtap="chongbo">
+  重播
+  </view> 
+</view>
+
+<view class="banquan">
+  版权：个人自制 开发：袁鹏  测试：李振芳 
+</view> 

@@ -1,0 +1,21 @@
+/**app.wxss  
+
+**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+page {
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: "ds-digital";
+  src: url('https://7970-yplzf-4gb2htq644912893-1305681739.tcb.qcloud.la/%E5%AD%97%E4%BD%93/%E3%80%90%E8%90%BD%E8%90%BD%E8%A1%A5%E3%80%91%E8%90%BD%E8%90%BD%E3%81%AE%E6%B1%A4%E5%9C%86.TTF?sign=6c944b4ea35ce0a90f58937d4d3820e8&t=1619621279');
+}	

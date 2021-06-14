@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "邀请函" ,
+  "navigationBarBackgroundColor": "#b3d4db",
+
+  "disableScroll": true,
+  "usingComponents": {
+    "swipertd": "../../components/swiper3D",
+    "swipertd-item": "../../components/swiper3D-item"
+  }
+}

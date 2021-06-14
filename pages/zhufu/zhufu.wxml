@@ -1,0 +1,162 @@
+<!-- 展示用户头像昵称 | 使用 <open-data /> 组件
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data> -->
+
+
+
+<view class='flex' >
+    
+    <view    style='height:150rpx;'> 
+         <image src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/jianji/心云1.png" class="beijingimage1"  ></image>
+         <view wx:if="{{isLogin}}" style="height:150rpx;margin-top: -150rpx;" class="hengjuzhong beijing1" >
+          <image style="margin-left: 20rpx;left: 8rpx; top: 80rpx; width: 129rpx; height: 129rpx; display: inline-block; box-sizing: border-box; border-radius: 100rpx" src='{{userInfo.avatarUrl}}' />
+          <text style="margin:50rpx ">{{userInfo.nickName}}</text>
+        </view>
+        <view wx:else style="height:100%;margin-top: -150rpx;" class=" beijing1">
+          <button type="primary" class="login-button " bindtap="login"  style="bottom: -35rpx;">登录</button>
+        </view> 
+    </view>
+
+
+
+
+
+
+
+ 
+    <view class='flex-item'  style='display: flex;flex-direction: column;justify-content:center;align-items:center;'>
+      <view wx:for="{{list}}" wx:key="index" style="width: 100%;height: 260rpx;display: flex;flex-direction: column;justify-content:center;align-items:center;">
+       
+        <view  class='item'  style="display: flex;flex-direction: column;justify-content:center;align-items:center;width: 90%; height: 250rpx; ">
+          <view style=" width: 97%;height: 70%; ">
+            
+            <view  class = 'beijing2' style='width: 100%;height: 100%;display: flex;flex-direction: row;justify-content:center;align-items:center '>
+              <view   style='width: 20%;height: 100%;display: flex;justify-content:center; '>
+                <image   style=" width: 100rpx ;height:  100rpx ;  border-radius: 100rpx;margin-top: 20rpx;"  src='{{item.avatarUrl}}' />
+              </view>
+
+
+              <view style='width: 80%;height: 100%;display: flex;flex-direction: column;justify-content:center;align-items:center  '>
+                <view style='font-size: 28rpx; width: 100%;height: 20%;display: flex;flex-direction: column;justify-content:center;'>{{item.nickName}}</view>
+                <view style='font-size: 32rpx; width: 100%;height: 50%;display: flex;flex-direction: column;justify-content:center;'>{{item.inputVal}}</view>
+                <view style='font-size: 20rpx;  width: 100%;height: 20%;display: flex;flex-direction: row-reverse'>{{item.dataTime}}</view>
+              </view>
+            </view>
+          </view>
+          <image src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/jianji/云间隔1.png" style="width: 100%;height: 20%;" ></image>
+        </view>
+
+
+
+      
+      </view>  
+
+
+    <view style="width: 100%;height: 260rpx;">
+
+    </view>
+    </view> 
+
+
+
+    <!--  -->
+    <view  class=" hengjuzhong  dibulan" >
+      
+      <image src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/jianji/云1.png" class="beijingimage"  ></image>
+      
+      <view   class=" hengjuzhong" style="height:100%;width:50%">
+        <image src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/jianji/留言紫心.png" style="width: {{imagewidth1}}%;height:{{imageheight1}}%; margin-top: 9%; margin-left: 10%;transform:rotate(30deg);" class="" bindtap="modalinput1" >
+        </image> 
+      </view>
+
+      <view     class=" hengjuzhong"  style="height:100%;width:50%">
+        <image src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/jianji/参加紫心.png" style="width:  {{imagewidth2}}%;height:{{imageheight2}}%;margin:auto;transform:rotate(-10deg);" class="" bindtap="modalinput2" >
+        </image> 
+      </view>
+    </view>
+
+
+
+
+</view>
+
+
+<modal id="modal1" hidden="{{hiddenmodalput1}}" title="留言" confirm-text="提交" cancel-text="取消" bindconfirm="confirm1" bindcancel="cancel1" > 
+ <input type='text' placeholder="留言：" bindinput="changeInputVal"  value="{{inputVal}}" auto-focus/> 
+ </modal>
+ <modal id="modal2" hidden="{{hiddenmodalput2}}" title="参加婚礼" confirm-text="提交" cancel-text="取消" bindconfirm="confirm2" bindcancel="cancel2" > 
+ <input type='text' placeholder="姓名：" bindinput="changenameInputVal"  value="{{inputnameVal}}" auto-focus/> 
+ <input type='text' placeholder="人数：" bindinput="changenumInputVal"  value="{{inputnumVal}}" auto-focus/> 
+ <input type='text' placeholder="到达时间："bindinput="changeriqiInputVal"  value="{{inputriqiVal}}"  auto-focus/> 
+ </modal>
+
+<!-- <view>
+
+ <view wx:if="{{isLogin}}"
+  style="position: relative; width: 750rpx; background: #ffffff; min-height: 120px; left: 3rpx; top: -54rpx; height: 104rpx; display: block; box-sizing: border-box；" >
+  <image
+    style="position: relative; left: 8rpx; top: 80rpx; width: 129rpx; height: 129rpx; display: inline-block; box-sizing: border-box; border-radius: 100rpx"
+    src='{{userInfo.avatarUrl}}' />
+    <text style="position: relative; left: 66rpx; top: 31rpx">{{userInfo.nickName}}</text>
+</view>
+<view wx:else
+  style="position: relative; width: 750rpx; background: #ffffff; min-height: 100px; left: 3rpx; top: 12rpx; height: 181rpx; display: block; box-sizing: border-box">
+  <button type="primary" class="login-button" bindtap="login"
+    style="position: relative; left: 0rpx; top: 43rpx">登录</button>
+
+
+</view>
+<view
+  style="position: relative; width: 750rpx; background: #F6F6F6; left: 3rpx; top: -54rpx; height: 181rpx; display: block; box-sizing: border-box">
+  <input bindinput="changeInputVal" class='input' type='text' value="{{inputVal}}" placeholder='请留言...'
+    placeholder-class='place-input'
+    style="position: relative; width: 535rpx; height: 75rpx; display: block; box-sizing: border-box; left: 29rpx; top: 50rpx;background:#ffffff"></input>
+    
+  <button type="primary" class='fabaio-button'
+    style="    padding: 1px;width: 115rpx; height: 71rpx; display: block; box-sizing: border-box; left: 272rpx; top: -24rpx; position: relative"
+    bindtap='addMsg' disabled="{{disabled}}">留</button>
+
+</view>
+
+<text class="msg-info" wx:if="{{list.length==0}}">
+        暂无留言……^_^
+</text>
+<view  class='item'  style="width: 750rpx; height: 200rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+  <view wx:for="{{list}}" wx:key="index"
+    style="position: relative; width: 750rpx; background: #F6F6F6; min-height: 120px; left: 3rpx; top: -54rpx; height: 100%; display: block; box-sizing: border-box">
+    <view style="position: relative; width: 694rpx; background: #ffffff; min-height: 80rpx; left: 40rpx; top: -10rpx; height: 235rpx; display: block; box-sizing: border-box;margin-top: 10px;"></view>
+
+    <view
+      style="position: relative; width: 666rpx; background: #F6F6F6; left: 47rpx; top: -230rpx; height: 181rpx; display: block; box-sizing: border-box">
+    </view>
+    <image
+      style="position: relative; left: 60rpx; top: -398rpx; width: 78rpx; height: 78rpx; display: inline-block; box-sizing: border-box; border-radius: 100rpx"
+      src='{{item.avatarUrl}}' />
+      <view style="font-size: 28rpx;  position: relative; width: 554rpx; background: #F6F6F6; left: 160rpx; top: -472rpx; height: 45rpx; display: block; box-sizing: border-box">{{item.nickName}}</view>
+      <view style="font-size: 32rpx; position: relative; width: 554rpx; background: #F6F6F6; left: 160rpx; top: -472rpx; height: 52rpx; display: block; box-sizing: border-box">
+        {{item.inputVal}}
+      </view>
+      <view style="font-size: 20rpx;  position: relative; width: 204rpx; background: #ffffff; left: 509rpx; top: -413rpx; height: 40rpx; display: block; box-sizing: border-box">{{item.dataTime}}</view>
+  </view>
+</view>
+</view>
+
+
+ 
+ -->
+
+
+<!--留言列表
+<text class="msg-info" wx:if="{{list.length==0}}">
+        暂无留言……^_^
+</text>
+<view style="position: relative; width: 750rpx; background: #F6F6F6; left: 3rpx; top: -54rpx; display: block; box-sizing: border-box; height: 100%">
+  <view  class='item' wx:for="{{list}}" wx:key="index" style="width: 750rpx; height: 174rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+    <text class='liuyanName'>{{item.nickName}}</text>
+    <text class="liuyanFH">说：</text>
+    <text class="liuyanText">{{item.inputVal}}</text>
+     <icon type='cancel' data-index="{{item._id}}" class='close-btn' bindtap="delMsg"></icon>
+    </view>
+
+</view>
+-->

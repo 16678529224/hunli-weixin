@@ -1,0 +1,28 @@
+<!--pages/zhufuguanli/zhufuguanli.wxml-->
+<view class='content'>
+  <view class='hang'><button style="background-color: #13e9f3;"  bindtap='addMsg' >测试增加</button></view>
+  
+  <view class='hang'>
+   
+    <view class='lie' style="width: 20%;">微信名</view>
+    <view class='lie' style="width: 20%;">姓名</view>
+    <view class='lie' style="width: 30%;">时间</view>
+    <view class='lie' style="width: 10%;">携带人数</view>
+    <view class='lie' style="width: 15%;">删除</view>
+  </view>
+
+
+
+  
+<block wx:for="{{list}}">
+  <view class='hang'>
+    <view class='lie' style="width: 20%;">{{item.nickName}}</view>
+    <view class='lie' style="width: 20%;">{{item.inputnameVal}}</view>
+    <view class='lie' style="width: 30%;" >{{item.inputriqiVal}}</view>
+    <view class='lie' style="width: 10%;">{{item.inputnumVal}}</view>
+    <view class='lie' style="width: 15%;">
+      <button style="background-color: #f31313;"    size='mini' bindtap='Bremove' data-id='{{item._id}}'>删除</button>
+    </view>
+  </view>
+</block>
+</view>

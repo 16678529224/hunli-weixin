@@ -1,0 +1,275 @@
+page{
+  background:#f1ce9c
+}
+.bright789_view_hide{
+    display: none;
+
+}
+
+.bright789_view_show{
+    display: block;
+
+}
+
+
+view{
+  font-family: 'ds-digital';
+  font-size: 75rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*播放器*/
+.background_music {
+  position: fixed;
+  top: 20rpx;
+  right: 10rpx;
+  z-index: 10001;
+  width: 100rpx;
+}
+
+.musicImg {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.music_icon {
+  animation: musicRotate 3s linear infinite;
+}
+
+.music_play {
+  width: 28rpx;
+  height: 60rpx;
+  margin-left: -5px;
+  transform-origin: top;
+  -webkit-transform: rotate(20deg);
+}
+
+.playImg {
+  animation: musicStop 1s linear forwards;
+}
+
+.pauseImg {
+  animation: musicStart 1s linear forwards;
+}
+
+@-webkit-keyframes musicRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.music_stop {
+  width: 4em;
+  display: none;
+}
+/*按钮*/
+.chongbo {
+  position: fixed;
+  bottom: 70rpx;
+  left: 10rpx;
+  z-index: 10001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color:#ff00009e;
+}
+.banquan{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  z-index: 10001;
+  font-size: 30rpx;
+  width: 100%;
+  color:#000;
+  font-family:fangsong;
+  font-weight:bold 
+}
+
+
+
+
+
+/* 总幕 */
+.flexjuzhong{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center ;
+}
+.zongMu{
+  position: absolute;
+  width:100%;
+  height:100%
+}
+
+.tupian1view{
+  width:100%;
+  position: absolute;
+  bottom: -10px;
+
+}
+
+
+/* 第二幕 */
+.wemziHI2{
+  position: absolute;
+  font-size: 180rpx;
+  color: #ffffff;
+  top: 20rpx;
+  text-align: center;
+  width: 100%;
+  transform:rotate(-13deg);
+}
+.wemzihuanying2 {  
+  left: 37rpx;
+  bottom: 1%;
+  position: absolute;
+  font-size: 122rpx;
+  color: #ffffff;
+  width: 15%;
+  opacity:0.5;
+}
+.wemzihuanyinghan2 {  
+  right: 37rpx;
+  top: -500rpx;
+  position: absolute;
+  font-size: 122rpx;
+  color: #ffffff;
+  width: 15%;
+  opacity:0.5;
+}
+.tupian2view{
+  width:100%;
+  position: absolute;
+  top: 16%;
+
+}
+/* 第四幕 */
+.wemziHI4{
+  font-size: 100%;
+  color: #ffffff;
+  height: 100%;
+}
+/* 第五幕 */
+.mu5tu2{
+  position: absolute;width:100%;z-index:2
+}
+.mu5tu3{
+  bottom: -100px;position: absolute;width:100%;height:100%;z-index:3;
+
+}
+.mu5tu4{
+  bottom: 15%;position: absolute;z-index:4;width: 300rpx;height: 500rpx;
+}
+.mu5tu5{
+  bottom: -200px;position: absolute;width:100%;z-index:5;
+}
+/* 第六幕 */
+.mu6tu4{
+  bottom: 15%;position: absolute;z-index:4;width: 350rpx;height: 500rpx;right: 0px;
+}
+/* 第八幕 立方 */
+.lifangzongMu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+.lifangMu1{
+  width:100%;
+  height: 50%;
+}
+.lifangMu2{
+  width:100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+.lifangMu2v1{
+  width:100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+.lifangMu2v2{
+  width:100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center ;
+}
+.lifangMu2v2v1{
+  background: rgb(255, 255, 255);
+  width:33%;
+  height: 100%;
+  margin: 8rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center ;
+}
+
+.lifangMu3{
+  width:100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center ;
+}
+.lifangMu3v1{
+  width:60%;
+  height: 100%;
+}
+.lifangMu3v2{
+  width:40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center ;
+}
+
+
+
+.lifangMu3v2v1{
+  width:100%;
+  height: 70%;
+}
+.lifangMu3v2v2{
+  width:100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+/* 魔方 */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

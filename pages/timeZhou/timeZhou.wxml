@@ -1,0 +1,180 @@
+<view class="div-b" style=" position:absolute;  z-index:10;width: 100%;height: 100%;" >
+  <image  src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/素材/海边桥横图竖.jpg"  style="width: 100%;height:500%"></image>
+</view> 
+<view class='g_con'>
+
+ 
+
+<!-- s时间轴顶部 -->
+<view class='expressRecord' style=" position:absolute;  z-index:200;">
+
+<view class='tou'>
+  <image  class='toutu' src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/jianji/我们的故事.png"  ></image>
+</view>
+  <!-- 半个时间轴线 -->
+  <view class='noReach-online-top-close'></view>
+
+
+<block wx:for="{{shuzhuangtu}}"  wx:key="{{index}}" wx:for-item="item">
+           
+
+<!-- 左图 -->
+  <view wx:if="{{ index%2 == 0 }}" class='zhong3zong'>
+    <view class='tuMoudle'  >
+      <image    mode='{{item.tuhenshu==0?"heightFix":"widthFix"}}'  src="{{item.coverImg}}" class='tupian' bindtap='clickImg' 
+      data-url='{{item.coverImg}}'
+      style="transform:rotate(9deg);" ></image>
+    </view>
+    
+    <!--中间模块 -->
+    <view class='zhongModle' >
+      <view class='shuxian' ></view>
+      <view class='dian' ></view>
+      <view class='shuxian' ></view>
+    </view>
+
+
+    <view class='wenziModle'  >
+      <view class='wenzi  main-title' >{{item.title1}}</view>
+      <view class='wenzi' >{{item.title2}}</view>
+    </view>
+  </view>
+<!-- 右图 -->
+  <view wx:else  class='zhong3zong'>     
+      <view class='wenziModle'  >
+        <view class='wenzi  main-title' >{{item.title1}}</view>
+        <view class='wenzi' >{{item.title2}}</view>
+      </view>
+      <!--中间模块 -->
+      <view class='zhongModle' >
+        <view class='shuxian' ></view>
+        <view class='dian' ></view>
+        <view class='shuxian' ></view>
+      </view>
+
+      <view class='tuMoudle'  >
+        <image  mode='{{item.tuhenshu==0?"heightFix":"widthFix"}}' src="{{item.coverImg}}" class='tupian' bindtap='clickImg' 
+        data-url='{{item.coverImg}}'
+        style="transform:rotate(9deg);" ></image>
+      </view>
+  </view>
+  
+</block>
+<view class="jiehunzhao" >
+  <text style="color:red;font-size: 100rpx;">我们要结婚啦！</text>
+  <text style="color:red;font-size: 60rpx;">2021.6.25</text>
+  <image class='jihunzhao1image' 
+  mode='widthFix' src="cloud://yplzf-4gb2htq644912893.7970-yplzf-4gb2htq644912893-1305681739/结婚照压缩/205.jpg"  bindtap='clickImgjiehun'  ></image>
+  <text style="color:#fbfbfbfa;font-size: 30rpx; margin-top: 20rpx;">(点击看全部结婚照~~)</text>
+</view>
+<view class="dibu">
+  <view class="dibu1">
+    
+  </view>
+  
+  <view class="dibu1">
+    在一起的第七年
+  </view>
+  <view class="dibu1">
+    一起迎来人生新阶段
+  </view>
+  <view class="dibu1">
+    路还很长
+  </view>
+  <view class="dibu1">
+    我们的故事
+  </view>
+  
+  <view class="dibu2">
+    未完待续
+  </view>
+  <view class="dibu1">
+    . . . . . .
+  </view>
+  <!-- <view class="dibu1">
+    .
+  </view>
+  <view class="dibu1">
+    .
+  </view>
+  <view class="dibu1">
+    .
+  </view>
+  <view class="dibu1">
+    .
+  </view>
+  <view class="dibu1">
+    .
+  </view>
+  <view class="dibu1">
+    .
+  </view> -->
+</view>
+
+
+
+
+</view>
+</view>
+
+
+
+
+
+
+
+<!-- 每一条时间线总父级
+  <view class='zhong3zong'>
+    <view class='tuMoudle' animation="{{tupian_1}}" style="transform:translateX(-150px);">
+      <image mode='heightFix' src="{{tu[0]}}" class='tupian' bindtap='clickImg' style="transform:rotate(9deg);" ></image>
+    </view>
+    <view class='zhongModle' >
+      <view class='shuxian' ></view>
+      <view class='dian' ></view>
+      <view class='shuxian' ></view>
+    </view>
+    <view class='wenziModle' animation="{{wemzi_1}}" style="transform:translateX(150px);">
+      <view class='wenzi  main-title' >第一次见面</view>
+      <view class='wenzi' >黑龙江牡丹江(2017-6-03)</view>
+    </view>
+  </view>
+
+
+  <view class='zhong3zong'>
+    <view class='wenziModle' >
+      <view class='wenzi' >第一次旅游</view>
+      <view class='wenzi' >沈阳宽甸(2017-6-03)</view>
+    </view>
+   
+    <view class='zhongModle' >
+      <view class='shuxian' ></view>
+      <view class='dian' ></view>
+      <view class='shuxian' ></view>
+    </view>
+     <view class='tuMoudle' >
+      <image mode='heightFix' src="{{tu[1]}}" class='tupian'  bindtap='clickImg' style="transform:rotate(-9deg);"></image>
+    </view>
+  </view>
+
+  <view class='zhong3zong'>
+    <view class='tuMoudle' >
+      <image mode='heightFix' src="{{tu[2]}}" class='tupian'  bindtap='clickImg' style="transform:rotate(-14deg);"></image>
+    </view>
+    <view class='zhongModle' >
+      <view class='shuxian' ></view>
+      <view class='dian' ></view>
+      <view class='shuxian' ></view>
+    </view>
+    <view class='wenziModle' >
+      <view class='wenzi' >第一次见面</view>
+      <view class='wenzi' >黑龙江牡丹江(2017-6-03)</view>
+    </view>
+  </view>
+
+
+
+  
+
+
+</view>
+</view> -->
