@@ -14,6 +14,8 @@
 </view>
 
 
+
+
 <!-- <view  class="container bright789_view_hide{{d1yc == true?'bright789_view_show':''}}">
   <view animation="{{animation}}" class="view">我在做动画</view> style="width:100%;height:100%;transform: scale(3);
 </view> -->
